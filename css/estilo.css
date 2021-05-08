@@ -1,0 +1,323 @@
+/*@Maur0: aplico grid para todo el content*/
+
+.grillaPrincipal{
+    display: grid;
+    
+    grid-template-rows: 30% 3% 60% 7%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+                "header" 
+                "nav" 
+                "section" 
+                "footer";
+}
+
+.grillaMenu{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: center;
+    align-items: center;
+
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 100%;
+
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins',sans-serif;
+    font-size: 26px;
+    text-align: center;
+    word-spacing: 5px;
+    
+}
+
+    /*@Maur0: estilo para el header con los iconos, barra buscador e imaagen central*/
+
+    .iconosFlex{
+        padding-top: 5px;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+
+        .iconosFlexHijoUno{
+            order:1
+        }
+
+        .iconosFlexHijoDos{
+            order:2
+        }
+
+        .imagenCentrada{
+            text-align: center;
+            max-height: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .imagenCentrada:hover{
+            text-align: center;
+            max-height: 100%;
+            transition:3s;
+            transform:scale(1.1,1.1);
+        }
+
+        
+.servicios{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+                        "plan1 plan1 plan1 plan1"
+                        "plan2 plan2 plan3 plan3"
+                        "plan4 plan4 plan5 plan5"
+                        "plan6 plan6 plan7 plan7"
+                        ;
+    justify-items: center;
+    align-items: center;
+}
+
+    .plan1{
+        grid-area: plan1;
+        background-color: rgb(240, 100, 100);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan2{
+        grid-area: plan2;
+        background-color: rgb(221, 105, 105);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan3{
+        grid-area: plan3;
+        background-color: rgb(207, 132, 70);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan4{
+        grid-area: plan4;
+        background-color: rgb(154, 108, 206);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan5{
+        grid-area: plan5;
+        background-color: rgb(176, 236, 152);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan6{
+        grid-area: plan6;
+        background-color: rgb(126, 200, 230);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan7{
+        grid-area: plan7;
+        background-color: rgb(126, 219, 172);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan8{
+        grid-area: plan8;
+        background-color: rgb(238, 160, 193);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+    .plan9{
+        grid-area: plan9;
+        background-color: rgb(213, 226, 98);
+        font-family: "poppins",sans-serif;
+        text-align: center;
+    }
+
+i{
+    font-size:3vh;
+}
+
+i:hover{
+    font-size:5vh;
+    color: rgb(41, 41, 41);
+}
+
+.parrafoPrincipal{
+    font-family: 'Poppins',sans-serif;
+    font-style:italic;
+    font-size: 20px;
+    font-weight:500;
+    text-align: center;
+}
+
+.parrafoSecundario{
+    font-family: 'Poppins',sans-serif;
+    font-style:italic;
+    font-size: 16px;
+    font-weight:300;
+    text-align: center;
+}
+
+.formatoTabla{
+    color: rgb(26, 8, 8);
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+/*@Mauro: estilos para las listas*/
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul ul{
+    display: none;
+}
+
+ul li:hover ul{
+    display:block;
+    max-width: 100%;
+}
+
+li{
+    max-width: 100%;
+    max-height: 100%;
+    position:relative;
+    text-align: center;
+    list-style-type: none;
+    padding-top: 2px;
+}
+
+li:hover{
+    background-color: rgba(233, 14, 14);
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(200, 200, 200);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.listasServicios {
+    color: rgb(26, 8, 8);
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    text-align: left;
+    word-spacing: 20px;
+}
+
+.button:{
+    background-color: rgb(233, 14, 14);
+    color:white;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    border:0;
+}
+.button:hover{
+    background-color: rgb(233, 14, 14);
+    color:white;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    border:0;
+}
+
+.input:focus{
+    width: 800px;
+    height: 100px;
+    background-color: rgb(233, 14, 14);
+    color:rgb(250, 80, 80);
+    font-size:40px;
+}
+
+/*@Maur0: aplico @media queries*/
+
+/* Large devices (desktop, 992px and up) */
+@media only screen and (max-width: 992px){
+
+    .grillaPrincipal{
+
+        grid-template-rows: 25% 5% 60% 10%;
+        grid-template-columns: 100%;
+    }
+
+    .grillaMenu{
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 100%;
+        font-size: 24px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .footer{
+        height:110vh;
+        padding-bottom: 80px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+
+    .grillaPrincipal{
+
+        grid-template-rows: 25% 5% 60% 10%;
+        grid-template-columns: 100%;
+    }
+
+    .grillaMenu{
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 100%;
+        font-size: 22px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .footer{
+        height:120vh;
+        padding-bottom: 80px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px){
+
+    .grillaPrincipal{
+
+        grid-template-rows: 20% 10% 60% 10%;
+        grid-template-columns: 100%;
+    }
+
+    .grillaMenu{
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 100%;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .servicios{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 20% 20% 10%;
+    }
+
+    .footer{
+        height:130vh;
+        padding-bottom: 80px;
+    }
+
+}
+

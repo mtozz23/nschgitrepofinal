@@ -1,0 +1,27 @@
+{
+  "name": "nsch_tozzini_mauro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estiloscss.scss css/estiloscss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-css": "^0.1.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtozz23/nschgitrepofinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mtozz23/nschgitrepofinal/issues"
+  },
+  "homepage": "https://github.com/mtozz23/nschgitrepofinal#readme",
+  "description": ""
+}
