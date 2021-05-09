@@ -25,6 +25,23 @@ img {
   grid-template-columns: 100%;
   grid-template-areas: "header"  "nav"  "section"  "footer"; }
 
+.grillaMenu {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-height: 100%;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  word-spacing: 5px; }
+
 header, .formatoVolverInicio, .tituloCopyright {
   grid-area: header;
   width: 100%;
@@ -44,6 +61,13 @@ footer {
   background-size: 100%;
   color: whitesmoke;
   font-size: 80%; }
+
+i {
+  font-size: 2vh; }
+
+i:hover {
+  font-size: 4vh;
+  color: #292929; }
 
 .formatoVolverInicio {
   background-color: #fa3c3c;
@@ -240,21 +264,104 @@ h5 {
 .parrafoSecundario {
   font-size: 18px; }
 
-/*@Maur0: Clase12 No lo quiero borrar porque quiero entender si lo estoy utilizando o no
-@keyframes estiloTitulares {
-    0%{
-        opacity: 0;
-        transform: rotate(25deg);
-        background-color: rgb(250, 60, 60);
-    } 
+/*@Mauro: estilos para las listas*/
+ul {
+  margin: 0;
+  padding: 0; }
 
-    50%{
-        transform: rotate(360deg);
-        background-color: rgb(240, 155, 155);
-    }
+ul ul {
+  display: none; }
 
-    100%{
-        opacity: 5;
-    }
- }
- */
+ul li:hover ul {
+  display: block;
+  max-width: 100%; }
+
+li {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 2px; }
+
+li:hover {
+  background-color: #424141;
+  opacity: 1;
+  transition: all 0.5s; }
+
+a {
+  font-family: 'Poppins', sans-serif;
+  color: #c8c8c8;
+  font-weight: 500;
+  text-decoration: none; }
+
+.button {
+  background-color: #e90e0e;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  border: 0; }
+
+.button:hover {
+  background-color: #e90e0e;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  border: 0; }
+
+.input:focus {
+  width: 800px;
+  height: 100px;
+  background-color: #e90e0e;
+  color: #fa5050;
+  font-size: 40px; }
+
+/*@Mauro: FIN estilos para las listas*/
+/*@Maur0: aplico @media queries*/
+/* Large devices (desktop, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .grillaPrincipal {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 100%; }
+  .grillaMenu {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 100%;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px; } }
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .grillaPrincipal {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 100%; }
+  .grillaMenu {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 100%;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*display: flex;
+        flex-direction: column;*/ }
+  .servicios {
+    display: gird;
+    /*flex-direction:column;*/
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto); } }
+
+/* // Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px) {
+  .grillaPrincipal {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 100%; }
+  .grillaMenu {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 100%;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: repeat(1, auto);
+        grid-template-rows: 100%;*/ } }
