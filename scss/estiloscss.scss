@@ -392,33 +392,33 @@ li:hover{
 }
 
 a{
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuentes;
     color: rgb(200, 200, 200);
     font-weight: 500;
     text-decoration: none;
 }
 
 .button{
-    background-color: rgb(233, 14, 14);
+    background-color: $colorfondo;
     color:white;
     font-size:20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuentes;
     border:0;
 }
 
 .button:hover{
-    background-color: rgb(233, 14, 14);
+    background-color: $colorfondo;
     color:white;
     font-size:20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuentes;
     border:0;
 }
 
 .input:focus{
     width: 800px;
     height: 100px;
-    background-color: rgb(233, 14, 14);
-    color:rgb(250, 80, 80);
+    background-color: $colorfondo;
+    color: $colorletrasec;
     font-size:40px;
 }
 /*@Mauro: FIN estilos para las listas*/
@@ -442,6 +442,12 @@ a{
         padding-bottom: 5px;
     }
 
+    .servicios{
+        display: grid;
+        /*flex-direction:column;*/
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 100%;
+    }
     
 }
 
@@ -464,10 +470,10 @@ a{
     }
 
     .servicios{
-        display: gird;
+        display: grid;
         /*flex-direction:column;*/
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: 100%;
     }
 
 }
@@ -489,10 +495,10 @@ a{
     }
 
     .servicios{
-        display: flex;
-        flex-direction:column;
-        /*grid-template-columns: repeat(1, auto);
-        grid-template-rows: 100%;*/
+        /*display: flex;
+        flex-direction:column;*/
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
     }
 
     

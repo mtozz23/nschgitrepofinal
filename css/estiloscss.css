@@ -290,7 +290,7 @@ li:hover {
   transition: all 0.5s; }
 
 a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #c8c8c8;
   font-weight: 500;
   text-decoration: none; }
@@ -299,14 +299,14 @@ a {
   background-color: #e90e0e;
   color: white;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 0; }
 
 .button:hover {
   background-color: #e90e0e;
   color: white;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 0; }
 
 .input:focus {
@@ -328,7 +328,12 @@ a {
     grid-template-columns: 100%;
     font-size: 24px;
     padding-top: 5px;
-    padding-bottom: 5px; } }
+    padding-bottom: 5px; }
+  .servicios {
+    display: grid;
+    /*flex-direction:column;*/
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 100%; } }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -344,10 +349,10 @@ a {
     /*display: flex;
         flex-direction: column;*/ }
   .servicios {
-    display: gird;
+    display: grid;
     /*flex-direction:column;*/
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(5, auto); } }
+    grid-template-rows: 100%; } }
 
 /* // Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 576px) {
@@ -361,7 +366,7 @@ a {
     padding-top: 5px;
     padding-bottom: 5px; }
   .servicios {
-    display: flex;
-    flex-direction: column;
-    /*grid-template-columns: repeat(1, auto);
-        grid-template-rows: 100%;*/ } }
+    /*display: flex;
+        flex-direction:column;*/
+    grid-template-columns: 100%;
+    grid-template-rows: 100%; } }
