@@ -19,20 +19,6 @@
     
 }
 
-    .imagenCentrada{
-        text-align: center;
-        max-height: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .imagenCentrada:hover{
-        text-align: center;
-        max-height: 100%;
-        transition:3s;
-        transform:scale(1.1,1.1);
-    }
-
 
 i{
     font-size:3vh;

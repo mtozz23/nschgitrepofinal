@@ -10,11 +10,24 @@ img{
     height: 100%;
 }
 
+.imagenCentrada{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 100%;
+    text-align: center;
+}
+
+.imagenCentrada:hover{
+    max-height: 100%;
+    text-align: center;
+    transition:3s;
+    transform:scale(1.1,1.1);
+}
+
 /*@Maur0: aplico grid para todo el content*/
 .grillaPrincipal{
     display: grid;
-    
-    grid-template-rows: 30% 3% 60% 7%;
+    grid-template-rows: 20% 5% 60% 15%;
     grid-template-columns: 100%;
     grid-template-areas: 
                 "header" 
@@ -199,7 +212,7 @@ footer{
 
 .servicios{
     margin: 0;
-    padding: 10px;
+    padding: 0;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 20% 20% 20% 20%;
@@ -217,74 +230,62 @@ footer{
 }
 
     .plan1{
+        grid-area: plan1;
+        margin: 0;
+        padding: 0;
         max-width: 100%;
         max-height: 100%;
-        grid-area: plan1;
         background-color: $colorfondoclaro;
         font-family: $fuentes;
         text-align: center;
         font-weight:bold;
     }
 
+    .plan1:hover{
+        transform: scale(1.05);
+        border: 5px solid $colorfondoclaro;
+    }
+
     .plan2{
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        max-height: 100%;
         grid-area: plan2;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
+        
     }
 
     .plan3{
         grid-area: plan3;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
     }
 
     .plan4{
         grid-area: plan4;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
     }
 
     .plan5{
         grid-area: plan5;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
     }
 
     .plan6{
         grid-area: plan6;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
     }
 
     .plan7{
         grid-area: plan7;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
         
     }
 
     .plan8{
         grid-area: plan8;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
     }
 
     .plan9{
         grid-area: plan9;
-        background-color: $colorfondoclaro;
-        font-family: $fuentes;
-        text-align: center;
+        @extend .plan1;
     }
 
 @mixin estiloTitulares($colorLetra, $tamaño, $ancho){

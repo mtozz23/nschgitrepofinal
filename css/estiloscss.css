@@ -1,3 +1,4 @@
+/*$colorfondoclaro: rgb(235, 233, 233);*/
 body {
   margin: 0; }
 
@@ -5,10 +6,22 @@ img {
   max-width: 100%;
   height: 100%; }
 
+.imagenCentrada {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 100%;
+  text-align: center; }
+
+.imagenCentrada:hover {
+  max-height: 100%;
+  text-align: center;
+  transition: 3s;
+  transform: scale(1.1, 1.1); }
+
 /*@Maur0: aplico grid para todo el content*/
 .grillaPrincipal {
   display: grid;
-  grid-template-rows: 30% 3% 60% 7%;
+  grid-template-rows: 20% 5% 60% 15%;
   grid-template-columns: 100%;
   grid-template-areas: "header"  "nav"  "section"  "footer"; }
 
@@ -134,7 +147,7 @@ footer {
 
 .servicios {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 20% 20% 20% 20% 20%;
@@ -142,66 +155,44 @@ footer {
   justify-items: center;
   align-items: center; }
 
-.plan1 {
-  max-width: 100%;
-  max-height: 100%;
+.plan1, .plan2, .plan3, .plan4, .plan5, .plan6, .plan7, .plan8, .plan9 {
   grid-area: plan1;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-weight: bold; }
-
-.plan2 {
   margin: 0;
   padding: 0;
   max-width: 100%;
   max-height: 100%;
-  grid-area: plan2;
-  background-color: #969191;
+  background-color: #c8a9a9;
   font-family: "Poppins", sans-serif;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold; }
+
+.plan1:hover, .plan2:hover, .plan3:hover, .plan4:hover, .plan5:hover, .plan6:hover, .plan7:hover, .plan8:hover, .plan9:hover {
+  transform: scale(1.05);
+  border: 5px solid #c8a9a9; }
+
+.plan2 {
+  grid-area: plan2; }
 
 .plan3 {
-  grid-area: plan3;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan3; }
 
 .plan4 {
-  grid-area: plan4;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan4; }
 
 .plan5 {
-  grid-area: plan5;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan5; }
 
 .plan6 {
-  grid-area: plan6;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan6; }
 
 .plan7 {
-  grid-area: plan7;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan7; }
 
 .plan8 {
-  grid-area: plan8;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan8; }
 
 .plan9 {
-  grid-area: plan9;
-  background-color: #969191;
-  font-family: "Poppins", sans-serif;
-  text-align: center; }
+  grid-area: plan9; }
 
 h1 {
   margin: 0;
