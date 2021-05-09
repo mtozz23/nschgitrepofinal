@@ -5,18 +5,21 @@ img {
   max-width: 100%;
   height: 100%; }
 
-header, footer, .formatoVolverInicio, .tituloCopyright {
+header, .formatoVolverInicio, .tituloCopyright {
   grid-area: header;
   width: 100%;
   max-height: 100%;
   background: linear-gradient(90deg, #e90e0e 10%, #c8a9a9 50%, #e90e0e 90%);
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 5px; }
 
 footer {
   grid-area: footer;
   height: 80vh;
-  padding-top: 60px;
+  /*padding-top:60px;
+    padding-bottom: 60px;*/
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: linear-gradient(90deg, #1d1a1a 5%, #292929 50%, #1d1a1a 90%);
   background-size: 100%;
   color: whitesmoke;
@@ -131,7 +134,8 @@ h1 {
   font-size: 66px;
   font-style: unset;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  padding: 10px; }
 
 h3 {
   margin: 0;
@@ -142,7 +146,8 @@ h3 {
   font-size: 34px;
   font-style: unset;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  padding: 7.5px; }
 
 h5 {
   margin: 0;
@@ -153,7 +158,18 @@ h5 {
   font-size: 28px;
   font-style: unset;
   font-weight: 900;
+  text-align: center;
+  padding: 5px; }
+
+.parrafoPrincipal, .parrafoSecundario {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center; }
+
+.parrafoSecundario {
+  font-size: 18px; }
 
 /*@Maur0: Clase12 No lo quiero borrar porque quiero entender si lo estoy utilizando o no
 @keyframes estiloTitulares {

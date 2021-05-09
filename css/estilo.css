@@ -27,55 +27,43 @@
     background-color: rgb(0, 0, 0);
     font-family: 'Poppins',sans-serif;
     font-size: 26px;
+    font-weight:900;
     text-align: center;
     word-spacing: 5px;
     
 }
 
-    /*@Maur0: estilo para el header con los iconos, barra buscador e imaagen central*/
-
-    .iconosFlex{
-        padding-top: 5px;
-        display:flex;
-        justify-content:space-evenly;
-        align-items:center;
+    .imagenCentrada{
+        text-align: center;
+        max-height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-        .iconosFlexHijoUno{
-            order:1
-        }
-
-        .iconosFlexHijoDos{
-            order:2
-        }
-
-        .imagenCentrada{
-            text-align: center;
-            max-height: 100%;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .imagenCentrada:hover{
-            text-align: center;
-            max-height: 100%;
-            transition:3s;
-            transform:scale(1.1,1.1);
-        }
+    .imagenCentrada:hover{
+        text-align: center;
+        max-height: 100%;
+        transition:3s;
+        transform:scale(1.1,1.1);
+    }
 
         
 .servicios{
+    margin: 0;
+    padding: 10px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-areas: 
-                        "plan1 plan1 plan1 plan1"
-                        "plan2 plan2 plan3 plan3"
-                        "plan4 plan4 plan5 plan5"
-                        "plan6 plan6 plan7 plan7"
+                        "plan1 plan1"
+                        "plan2 plan3"
+                        "plan4 plan5"
+                        "plan6 plan7"
+                        "plan8 plan9"
                         ;
     justify-items: center;
     align-items: center;
+
 }
 
     .plan1{
@@ -83,6 +71,7 @@
         background-color: rgb(240, 100, 100);
         font-family: "poppins",sans-serif;
         text-align: center;
+        max-width: 100%;
     }
 
     .plan2{
@@ -150,30 +139,6 @@ i:hover{
     color: rgb(41, 41, 41);
 }
 
-.parrafoPrincipal{
-    font-family: 'Poppins',sans-serif;
-    font-style:italic;
-    font-size: 20px;
-    font-weight:500;
-    text-align: center;
-}
-
-.parrafoSecundario{
-    font-family: 'Poppins',sans-serif;
-    font-style:italic;
-    font-size: 16px;
-    font-weight:300;
-    text-align: center;
-}
-
-.formatoTabla{
-    color: rgb(26, 8, 8);
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: left;
-}
-
 /*@Mauro: estilos para las listas*/
 
 ul{
@@ -212,21 +177,14 @@ a{
     text-decoration: none;
 }
 
-.listasServicios {
-    color: rgb(26, 8, 8);
-    font-family: 'Poppins',sans-serif;
-    font-size: 40px;
-    text-align: left;
-    word-spacing: 20px;
-}
-
-.button:{
+.button{
     background-color: rgb(233, 14, 14);
     color:white;
     font-size:20px;
     font-family: 'Poppins', sans-serif;
     border:0;
 }
+
 .button:hover{
     background-color: rgb(233, 14, 14);
     color:white;
@@ -249,59 +207,52 @@ a{
 @media only screen and (max-width: 992px){
 
     .grillaPrincipal{
-
-        grid-template-rows: 25% 5% 60% 10%;
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 100%;
     }
+    
 
     .grillaMenu{
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: repeat(5, auto);
         grid-template-columns: 100%;
         font-size: 24px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
 
-    .footer{
-        height:110vh;
-        padding-bottom: 80px;
-    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px){
 
     .grillaPrincipal{
-
-        grid-template-rows: 25% 5% 60% 10%;
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 100%;
     }
 
     .grillaMenu{
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: repeat(5, auto);
         grid-template-columns: 100%;
         font-size: 22px;
         padding-top: 5px;
         padding-bottom: 5px;
+        /*display: flex;
+        flex-direction: column;*/
     }
 
-    .footer{
-        height:120vh;
-        padding-bottom: 80px;
-    }
 }
 
 /* // Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 576px){
 
     .grillaPrincipal{
-
-        grid-template-rows: 20% 10% 60% 10%;
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 100%;
     }
 
     .grillaMenu{
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: repeat(5, auto);
         grid-template-columns: 100%;
         font-size: 20px;
         padding-top: 5px;
@@ -309,15 +260,13 @@ a{
     }
 
     .servicios{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 50% 20% 20% 10%;
+        display: gird;
+        /*flex-direction:column;*/
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
     }
 
-    .footer{
-        height:130vh;
-        padding-bottom: 80px;
-    }
+    
 
 }
 
