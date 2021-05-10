@@ -25,16 +25,24 @@ img{
 }
 
 /*@Maur0: aplico grid para todo el content*/
-.grillaPrincipal{
+.mainGrid{
     display: grid;
-    grid-template-rows: 20% 5% 60% 15%;
+    grid-template-rows: 10% 20% 50% 20%;
     grid-template-columns: 100%;
     grid-template-areas: 
-                "header" 
-                "nav" 
+                "nav"
+                "header"
                 "section" 
                 "footer";
 }
+
+/*
+.mainGrid{
+    display: flex;
+    flex-direction: column;
+
+}*/
+
 
 .grillaMenu{
     grid-area: nav;
@@ -82,15 +90,15 @@ footer{
 }
 
 i{
-    font-size:2vh;
+    font-size:3vh;
 }
 
 i:hover{
-    font-size:4vh;
+    font-size:5vh;
     color: rgb(41, 41, 41);
 }
 
-.formatoVolverInicio{
+.volverInicio{
     @extend header;
     background-color: $colorletraprim;
     font-size: 20px;
@@ -113,16 +121,15 @@ i:hover{
 }
 
 .card1{
-    padding: 5px;
+    padding: 40px;
 
     &__img1{
         display:block;
-        height:100px;
-        background-color: $colorfondo;
+        align-items: center;
     }
 
     &__contenido1{
-        background-color:$colorletrasec;
+        background-color:$colorfondoclaro;
     }
 }
     
@@ -134,37 +141,35 @@ i:hover{
     &__item1{
         color: black;
         font-size: 16px;
-        background-color: rgb(231, 231, 231);
 
         &--activo1{
-            background-color: black;
+            background-color: $colorletrasec;
             color: white;
         }
     }
 }
+
 .boton1{
 
-    color: rgb(117, 116, 116);
     display: flex;
-    align-items: center;
+    align-items:center;
     width: 100%;
 
     &__icono1{
-        color: rgb(102, 104, 102);
+        color: $colorfondogris;
     }
 }
 
 .card2{
-    padding: 5px;
+    padding: 40px;
 
     &__img2{
         display:block;
-        height:100px;
-        background-color: darkolivegreen;
+        align-items: center;
     }
 
     &__contenido2{
-        background-color: lightgreen;
+        background-color:$colorfondoclaro;
     }
 }
     
@@ -176,7 +181,6 @@ i:hover{
     &__item2{
         color: black;
         font-size: 16px;
-        background-color: rgb(231, 231, 231);
 
         &--activo2{
             background-color: black;
@@ -187,27 +191,26 @@ i:hover{
 
 .boton2{
 
-    color: rgb(117, 116, 116);
+    color: $colorfondogris;
     display: flex;
     align-items: center;
     width: 100%;
 
     &__icono2{
-        color: rgb(102, 104, 102);
+        color: $colorfondogris;
     }
 }
 
 .card3{
-    padding: 5px;
+    padding: 40px;
 
     &__img3{
         display:block;
-        height:100px;
-        background-color: darkorchid;
+        align-items: center;
     }
 
     &__contenido3{
-        background-color:rgb(204, 156, 194);
+        background-color:$colorfondoclaro;
     }
 }
     
@@ -219,7 +222,6 @@ i:hover{
     &__item3{
         color: black;
         font-size: 16px;
-        background-color: rgb(231, 231, 231);
 
         &--activo3{
             background-color: black;
@@ -230,13 +232,13 @@ i:hover{
 
 .boton3{
 
-    color: rgb(117, 116, 116);
+    color: $colorfondogris;
     display: flex;
     align-items: center;
     width: 100%;
 
     &__icono3{
-        color: rgb(102, 104, 102);
+        color: $colorfondogris;
     }
 }
 
@@ -253,7 +255,6 @@ i:hover{
                         "plan6 plan7"
                         "plan8 plan9"
                         ;
-    justify-items: center;
     align-items: center;
     
 
@@ -265,15 +266,16 @@ i:hover{
         padding: 0;
         max-width: 100%;
         max-height: 100%;
-        background-color: $colorfondoclaro;
         font-family: $fuentes;
-        text-align: center;
-        font-weight:bold;
+      text-align: center;
+        font-weight: bold;
+        justify-items: center;
+
     }
 
     .plan1:hover{
         transform: scale(1.05);
-        border: 5px solid $colorfondoclaro;
+        border: 6px solid rgb(114, 113, 113);
     }
 
     .plan2{
@@ -333,17 +335,17 @@ i:hover{
 }
 
 h1{
-    @include estiloTitulares(rgb(250, 60, 60),66px,bold);
-    padding: 10px;
+    @include estiloTitulares($colorletraprim,66px,bold);
+    padding: 12px;
 } 
 
 h3{
-    @include estiloTitulares(rgba(250, 80, 80, 0.774), 34px,bold);
-    padding: 7.5px;
+    @include estiloTitulares($colorletrasec, 34px,bold);
+    padding: 8px;
 }
 
 h5{
-    @include estiloTitulares(rgba(250, 80, 80, 0.774), 28px,900);
+    @include estiloTitulares($colorletrasec, 28px,900);
     padding: 5px;
 }
 
@@ -386,7 +388,7 @@ li{
 }
 
 li:hover{
-    background-color: rgb(66, 65, 65);
+    background-color: $colorfondoclaro;
     opacity: 1;
     transition: all 0.5s;
 }
@@ -394,8 +396,12 @@ li:hover{
 a{
     font-family: $fuentes;
     color: rgb(200, 200, 200);
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
+}
+
+a:hover{
+    color: whitesmoke;
 }
 
 .button{
@@ -423,17 +429,17 @@ a{
 }
 /*@Mauro: FIN estilos para las listas*/
 
-
 /*@Maur0: aplico @media queries*/
 /* Large devices (desktop, 992px and up) */
 @media only screen and (max-width: 992px){
 
-    .grillaPrincipal{
+    /*
+    .mainGrid{
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 100%;
-    }
+    }*/
     
-
+    
     .grillaMenu{
         grid-template-rows: repeat(5, auto);
         grid-template-columns: 100%;
@@ -444,7 +450,6 @@ a{
 
     .servicios{
         display: grid;
-        /*flex-direction:column;*/
         grid-template-columns: repeat(2, auto);
         grid-template-rows: 100%;
     }
@@ -454,53 +459,24 @@ a{
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px){
 
-    .grillaPrincipal{
+    /*
+    .mainGrid{
         grid-template-rows: repeat(4, auto);
-        grid-template-columns: 100%;
-    }
-
+    }*/
+    
     .grillaMenu{
         grid-template-rows: repeat(5, auto);
         grid-template-columns: 100%;
         font-size: 22px;
         padding-top: 5px;
         padding-bottom: 5px;
-        /*display: flex;
-        flex-direction: column;*/
+        
     }
-
-    .servicios{
-        display: grid;
-        /*flex-direction:column;*/
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: 100%;
-    }
-
-}
-
-/* // Small devices (landscape phones, 576px and up)*/
-@media only screen and (max-width: 576px){
-
-    .grillaPrincipal{
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: 100%;
-    }
-
-    .grillaMenu{
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: 100%;
-        font-size: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .servicios{
-        /*display: flex;
-        flex-direction:column;*/
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-    }
-
     
+    .servicios{
+        display: flex;
+        flex-direction:column;
+
+    }
 
 }
