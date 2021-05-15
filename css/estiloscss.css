@@ -7,8 +7,6 @@ img {
   height: 100%; }
 
 .imagenCentrada {
-  padding-top: 10px;
-  padding-bottom: 10px;
   max-height: 100%;
   text-align: center; }
 
@@ -21,9 +19,9 @@ img {
 /*@Maur0: aplico grid para todo el content*/
 .mainGrid {
   display: grid;
-  grid-template-rows: 10% 20% 50% 20%;
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: 100%;
-  grid-template-areas: "nav" "header" "section"  "footer"; }
+  grid-template-areas: "header" "section"  "footer"; }
 
 /*
 .mainGrid{
@@ -50,11 +48,10 @@ img {
 
 header, .volverInicio, .tituloCopyright {
   grid-area: header;
+  padding-top: 70px;
   width: 100%;
   max-height: 100%;
-  background: linear-gradient(90deg, #e90e0e 10%, #c8a9a9 50%, #e90e0e 90%);
-  font-family: "Poppins", sans-serif;
-  font-size: 5px; }
+  background: linear-gradient(90deg, #e90e0e 10%, #c8a9a9 50%, #e90e0e 90%); }
 
 footer {
   grid-area: footer;
@@ -226,7 +223,7 @@ h1 {
   font-style: unset;
   font-weight: bold;
   text-align: center;
-  padding: 12px; }
+  padding: 15px; }
 
 h3 {
   margin: 0;
@@ -238,7 +235,7 @@ h3 {
   font-style: unset;
   font-weight: bold;
   text-align: center;
-  padding: 8px; }
+  padding: 12px; }
 
 h5 {
   margin: 0;
@@ -250,7 +247,7 @@ h5 {
   font-style: unset;
   font-weight: 900;
   text-align: center;
-  padding: 5px; }
+  padding: 8px; }
 
 .parrafoPrincipal, .parrafoSecundario {
   font-family: "Poppins", sans-serif;
