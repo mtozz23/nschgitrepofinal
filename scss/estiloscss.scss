@@ -40,7 +40,7 @@ img{
 
 }*/
 
-
+/*
 .grillaMenu{
     grid-area: nav;
     display: grid;
@@ -61,6 +61,7 @@ img{
     word-spacing: 5px;
     
 }
+*/
 
 header{
     grid-area: header;
@@ -73,15 +74,15 @@ header{
 
 footer{
     grid-area: footer;
-    height: 80vh;
-    /*padding-top:60px;
+    /*height: 80vh;
+    padding-top:60px;
     padding-bottom: 60px;*/
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background: linear-gradient(90deg, rgba(29,26,26,1) 5%, rgb(41, 41, 41) 50%, rgba(29,26,26,1) 90%);     
+    /*background: linear-gradient(90deg, rgba(29,26,26,1) 5%, rgb(41, 41, 41) 50%, rgba(29,26,26,1) 90%);     
     background-size:100%;
     color: whitesmoke;
-    font-size: 80%;
+    font-size: 100%;*/
         
 }
 
@@ -104,7 +105,7 @@ i:hover{
 
 }
 
-.tituloCopyright{
+/*.tituloCopyright{
     @extend header;
     margin: 5;
     padding: 10px;
@@ -117,6 +118,7 @@ i:hover{
     letter-spacing: 3px;
 
 }
+*/
 
 .card1{
     padding: 40px;
@@ -265,8 +267,7 @@ i:hover{
         max-width: 100%;
         max-height: 100%;
         font-family: $fuentes;
-      text-align: center;
-        font-weight: bold;
+        text-align: center;
         justify-items: center;
 
     }
@@ -318,32 +319,31 @@ i:hover{
         @extend .plan1;
     }
 
-@mixin estiloTitulares($colorLetra, $tamaño, $ancho){
+@mixin estiloTitulares($colorLetra, $tamaño){
 
     margin: 0;
     width: 100%;
     max-height: 100%;
     color:$colorLetra;
-    font-family: "poppins",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: $tamaño;
     font-style:unset;
-    font-weight: $ancho;
     text-align: center;
 
 }
 
 h1{
-    @include estiloTitulares($colorletraprim,66px,bold);
+    @include estiloTitulares($colorletraprim,66px);
     padding: 15px;
 } 
 
 h3{
-    @include estiloTitulares($colorletrasec, 34px,bold);
+    @include estiloTitulares($colorletrasec, 34px);
     padding: 12px;
 }
 
 h5{
-    @include estiloTitulares($colorletrasec, 28px,900);
+    @include estiloTitulares($colorletrasec, 28px);
     padding: 8px;
 }
 
@@ -351,7 +351,6 @@ h5{
     font-family: $fuentes;
     font-style:normal;
     font-size: 20px;
-    font-weight:bold;
     text-align: center;
 }
 
@@ -394,7 +393,6 @@ li:hover{
 a{
     font-family: $fuentes;
     color: rgb(200, 200, 200);
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -435,7 +433,7 @@ a:hover{
     .mainGrid{
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 100%;
-    }*/
+    }
     
     
     .grillaMenu{
@@ -445,6 +443,7 @@ a:hover{
         padding-top: 5px;
         padding-bottom: 5px;
     }
+    */
 
     .servicios{
         display: grid;
@@ -460,12 +459,8 @@ a:hover{
     /*
     .mainGrid{
         grid-template-rows: repeat(4, auto);
-    }*/
-    
-    img{
-        max-width: 200%;
-        height: 200%;
     }
+
     .grillaMenu{
         grid-template-rows: repeat(5, auto);
         grid-template-columns: 100%;
@@ -474,6 +469,8 @@ a:hover{
         padding-bottom: 5px;
         
     }
+
+    */
     
     .servicios{
         display: flex;
