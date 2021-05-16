@@ -128,7 +128,6 @@ i:hover{
       color: white; }
 
 .boton2 {
-  color: #666866;
   display: flex;
   align-items: center;
   max-width: 100%; }
@@ -154,7 +153,6 @@ i:hover{
       color: white; }
 
 .boton3 {
-  color: #666866;
   display: flex;
   align-items: center;
   width: 100%; }
@@ -165,8 +163,8 @@ i:hover{
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "plan1 plan1" "plan2 plan3" "plan4 plan5" "plan6 plan7" "plan8 plan9";
   align-items: center; }
 
