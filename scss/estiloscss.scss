@@ -333,17 +333,17 @@ i:hover{
 }
 
 h1{
-    @include estiloTitulares($colorletraprim,66px);
+    @include estiloTitulares($colorletraprim,60px);
     padding: 15px;
 } 
 
 h3{
-    @include estiloTitulares($colorletrasec, 34px);
+    @include estiloTitulares($colorletrasec, 32x);
     padding: 12px;
 }
 
 h5{
-    @include estiloTitulares($colorletrasec, 28px);
+    @include estiloTitulares($colorletrasec, 26px);
     padding: 8px;
 }
 
