@@ -105,7 +105,7 @@ i:hover{
 .boton1 {
   display: flex;
   align-items: center;
-  width: 100%; }
+  max-width: 100%; }
   .boton1__icono1 {
     color: #666866; }
 
@@ -155,7 +155,7 @@ i:hover{
 .boton3 {
   display: flex;
   align-items: center;
-  width: 100%; }
+  max-width: 100%; }
   .boton3__icono3 {
     color: #666866; }
 
