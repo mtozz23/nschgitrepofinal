@@ -68,10 +68,12 @@ footer {
 i {
   font-size: 3vh; }
 
-i:hover {
-  font-size: 5vh;
-  color: #292929; }
-
+/*
+i:hover{
+    font-size:5vh;
+    color: rgb(41, 41, 41);
+}
+*/
 .volverInicio {
   background-color: #fa3c3c;
   font-size: 20px;
