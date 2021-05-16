@@ -53,7 +53,7 @@ img {
 */
 header, .volverInicio {
   grid-area: header;
-  padding-top: 100px;
+  padding-top: 90px;
   width: 100%;
   max-height: 100%;
   background: linear-gradient(90deg, #e90e0e 10%, #c8a9a9 50%, #e90e0e 90%); }
@@ -88,7 +88,9 @@ i:hover{
   padding: 40px; }
   .card1__img1 {
     display: block;
-    align-items: center; }
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; }
   .card1__contenido1 {
     background-color: #c8a9a9; }
 
@@ -113,7 +115,9 @@ i:hover{
   padding: 40px; }
   .card2__img2 {
     display: block;
-    align-items: center; }
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; }
   .card2__contenido2 {
     background-color: #c8a9a9; }
 
@@ -131,7 +135,7 @@ i:hover{
   color: #666866;
   display: flex;
   align-items: center;
-  width: 100%; }
+  max-width: 100%; }
   .boton2__icono2 {
     color: #666866; }
 
@@ -139,7 +143,9 @@ i:hover{
   padding: 40px; }
   .card3__img3 {
     display: block;
-    align-items: center; }
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; }
   .card3__contenido3 {
     background-color: #c8a9a9; }
 
@@ -182,7 +188,7 @@ i:hover{
 
 .plan1:hover, .plan2:hover, .plan3:hover, .plan4:hover, .plan5:hover, .plan6:hover, .plan7:hover, .plan8:hover, .plan9:hover {
   transform: scale(1.05);
-  border: 6px solid #727171; }
+  border: 3px solid #727171; }
 
 .plan2 {
   grid-area: plan2; }
@@ -225,7 +231,7 @@ h3 {
   max-height: 100%;
   color: #fa5050;
   font-family: "Montserrat",sans-serif;
-  font-size: 32x;
+  font-size: 40px;
   font-style: unset;
   text-align: center;
   padding: 12px; }
@@ -236,7 +242,7 @@ h5 {
   max-height: 100%;
   color: #fa5050;
   font-family: "Montserrat",sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   font-style: unset;
   text-align: center;
   padding: 8px; }
@@ -306,8 +312,8 @@ a:hover {
 
 /*@Mauro: FIN estilos para las listas*/
 /*@Maur0: aplico @media queries*/
-/* Large devices (desktop, 992px and up) */
-@media only screen and (max-width: 992px) {
+/* Large devices (desktop, 991.98px and up) */
+@media only screen and (max-width: 991.98px) {
   /*
     .mainGrid{
         grid-template-rows: repeat(4, auto);
@@ -328,8 +334,29 @@ a:hover {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: 100%; } }
 
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (tablets, 767 and up) */
+@media only screen and (max-width: 767.98px) {
+  /*
+    .mainGrid{
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .grillaMenu{
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 100%;
+        font-size: 22px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+
+    */
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: 100%; } }
+
+@media (max-width: 575.98px) {
   /*
     .mainGrid{
         grid-template-rows: repeat(4, auto);
