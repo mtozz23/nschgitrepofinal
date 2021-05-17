@@ -319,7 +319,7 @@ i:hover{
 }
 
 h1{
-    @include estiloTitulares($colorletraprim,60px);
+    @include estiloTitulares($colorletraprim,50px);
     padding: 15px;
 } 
 
@@ -372,7 +372,6 @@ li{
 
 li:hover{
     background-color: $colorletraprim;
-    opacity: 1;
     transition: all 0.5s;
 }
 
