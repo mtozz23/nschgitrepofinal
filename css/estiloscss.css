@@ -90,7 +90,7 @@ i:hover{
     display: block;
     align-items: center; }
   .card1__contenido1 {
-    background-color: #c8a9a9; }
+    background-color: rgba(102, 104, 102, 0.5); }
 
 .lista1 {
   list-style-type: none;
@@ -99,7 +99,7 @@ i:hover{
     color: black;
     font-size: 16px; }
     .lista1__item1--activo1 {
-      background-color: #fa5050;
+      background-color: black;
       color: white; }
 
 .boton1 {
@@ -115,7 +115,7 @@ i:hover{
     display: block;
     align-items: center; }
   .card2__contenido2 {
-    background-color: #c8a9a9; }
+    background-color: rgba(102, 104, 102, 0.5); }
 
 .lista2 {
   list-style-type: none;
@@ -140,7 +140,7 @@ i:hover{
     display: block;
     align-items: center; }
   .card3__contenido3 {
-    background-color: #c8a9a9; }
+    background-color: rgba(102, 104, 102, 0.5); }
 
 .lista3 {
   list-style-type: none;

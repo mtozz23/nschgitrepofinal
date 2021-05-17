@@ -115,7 +115,7 @@ i:hover{
     }
 
     &__contenido1{
-        background-color:$colorfondoclaro;
+        background-color: $colorfondogrisclaro;
     }
 }
     
@@ -129,9 +129,10 @@ i:hover{
         font-size: 16px;
 
         &--activo1{
-            background-color: $colorletrasec;
+            background-color: black;
             color: white;
         }
+
     }
 }
 
@@ -156,7 +157,7 @@ i:hover{
     }
 
     &__contenido2{
-        background-color:$colorfondoclaro;
+        background-color: $colorfondogrisclaro;
     }
 }
     
@@ -197,7 +198,7 @@ i:hover{
     }
 
     &__contenido3{
-        background-color:$colorfondoclaro;
+        background-color: $colorfondogrisclaro;
     }
 }
     
