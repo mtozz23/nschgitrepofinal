@@ -19,8 +19,7 @@ img{
 .imagenCentrada:hover{
     max-height: 100%;
     text-align: center;
-    transition:3s;
-    transform:scale(1.1,1.1);
+    
 }
 
 /*@Maur0: aplico grid para todo el content*/
@@ -66,7 +65,7 @@ img{
 
 header{
     grid-area: header;
-    padding-top: 70px;
+    padding-top: 68px;
     width: 100%;
     max-height: 100%;
     background: linear-gradient(90deg, $colorfondo 10%, rgba(200,169,169,1) 50%, $colorfondo 90%); 
@@ -322,17 +321,17 @@ i:hover{
 
 h1{
     @include estiloTitulares($colorletraprim,50px);
-    padding: 15px;
+    padding: 30px;
 } 
 
 h3{
     @include estiloTitulares($colorletrasec, 40px);
-    padding: 12px;
+    padding: 15px;
 }
 
 h5{
     @include estiloTitulares($colorletrasec, 30px);
-    padding: 8px;
+    padding: 10px;
 }
 
 .parrafoPrincipal{
@@ -340,6 +339,16 @@ h5{
     font-style:normal;
     font-size: 20px;
     text-align: center;
+}
+
+.parrafoPrincipalBackground{
+    font-family: $fuentes;
+    font-style:normal;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    background-color: $colorletrasectransp;
+    
 }
 
 .parrafoSecundario{
