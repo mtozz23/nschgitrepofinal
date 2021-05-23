@@ -383,7 +383,7 @@ li{
 
 li:hover{
     background-color: $colorletraprim;
-    transition: all 0.5s;
+    transition: all 0.5s;   
 }
 
 a{
@@ -394,6 +394,10 @@ a{
 
 a:hover{
     color: whitesmoke;
+}
+
+a:active{
+    background-color: $colorletraprim;
 }
 
 .button{
