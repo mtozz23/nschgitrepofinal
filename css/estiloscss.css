@@ -286,9 +286,6 @@ a {
 a:hover {
   color: whitesmoke; }
 
-a:active {
-  background-color: #fa3c3c; }
-
 .button {
   background-color: #e90e0e;
   color: white;
