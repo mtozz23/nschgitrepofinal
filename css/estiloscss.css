@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*$colorfondoclaro: rgb(235, 233, 233);*/
 body {
   margin: 0; }
@@ -10,10 +11,6 @@ img {
   max-height: 100%;
   text-align: center; }
 
-.imagenCentrada:hover {
-  max-height: 100%;
-  text-align: center; }
-
 /*@Maur0: aplico grid para todo el content*/
 .mainGrid {
   display: grid;
@@ -21,35 +18,7 @@ img {
   grid-template-columns: 100%;
   grid-template-areas: "header" "main"  "footer"; }
 
-/*
-.mainGrid{
-    display: flex;
-    flex-direction: column;
-
-}*/
-/*
-.grillaMenu{
-    grid-area: nav;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    justify-items: center;
-    align-items: center;
-
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    max-height: 100%;
-
-    background-color: rgb(0, 0, 0);
-    font-family: $fuentes;
-    font-size: 26px;
-    font-weight:bold;
-    text-align: center;
-    word-spacing: 5px;
-    
-}
-*/
-header, .volverInicio {
+header {
   grid-area: header;
   padding-top: 68px;
   width: 100%;
@@ -71,17 +40,55 @@ footer {
 i {
   font-size: 3vh; }
 
-/*
-i:hover{
-    font-size:5vh;
-    color: rgb(41, 41, 41);
-}
-*/
-.volverInicio {
-  background-color: #fa3c3c;
-  font-size: 20px;
-  text-align: right; }
+/*@Maur0: detalle servicios a través de un grid*/
+.servicios {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "plan1 plan1" "plan2 plan3" "plan4 plan5" "plan6 plan7" "plan8 plan9";
+  align-items: center; }
 
+.plan1, .plan2, .plan3, .plan4, .plan5, .plan6, .plan7, .plan8, .plan9 {
+  grid-area: plan1;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  justify-items: center; }
+
+.plan1:hover, .plan2:hover, .plan3:hover, .plan4:hover, .plan5:hover, .plan6:hover, .plan7:hover, .plan8:hover, .plan9:hover {
+  transform: scale(1.05);
+  border: 3px solid #727171; }
+
+.plan2 {
+  grid-area: plan2; }
+
+.plan3 {
+  grid-area: plan3; }
+
+.plan4 {
+  grid-area: plan4; }
+
+.plan5 {
+  grid-area: plan5; }
+
+.plan6 {
+  grid-area: plan6; }
+
+.plan7 {
+  grid-area: plan7; }
+
+.plan8 {
+  grid-area: plan8; }
+
+.plan9 {
+  grid-area: plan9; }
+
+/*@Maur0: detalle promos a través de BEM*/
 .card1 {
   padding: 40px; }
   .card1__img1 {
@@ -157,53 +164,6 @@ i:hover{
   .boton3__icono3 {
     color: #666866; }
 
-.servicios {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: "plan1 plan1" "plan2 plan3" "plan4 plan5" "plan6 plan7" "plan8 plan9";
-  align-items: center; }
-
-.plan1, .plan2, .plan3, .plan4, .plan5, .plan6, .plan7, .plan8, .plan9 {
-  grid-area: plan1;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  max-height: 100%;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  justify-items: center; }
-
-.plan1:hover, .plan2:hover, .plan3:hover, .plan4:hover, .plan5:hover, .plan6:hover, .plan7:hover, .plan8:hover, .plan9:hover {
-  transform: scale(1.05);
-  border: 3px solid #727171; }
-
-.plan2 {
-  grid-area: plan2; }
-
-.plan3 {
-  grid-area: plan3; }
-
-.plan4 {
-  grid-area: plan4; }
-
-.plan5 {
-  grid-area: plan5; }
-
-.plan6 {
-  grid-area: plan6; }
-
-.plan7 {
-  grid-area: plan7; }
-
-.plan8 {
-  grid-area: plan8; }
-
-.plan9 {
-  grid-area: plan9; }
-
 h1 {
   margin: 0;
   width: 100%;
@@ -275,8 +235,10 @@ li {
   padding-top: 2px; }
 
 li:hover {
-  background-color: #fa3c3c;
-  transition: all 0.5s; }
+  background-color: #fa5050;
+  transition: all 0.5s;
+  border-bottom: whitesmoke;
+  border-width: 20px; }
 
 a {
   font-family: "Montserrat", sans-serif;
@@ -285,6 +247,12 @@ a {
 
 a:hover {
   color: whitesmoke; }
+
+.activeMenu {
+  color: whitesmoke;
+  background-color: #fa5050;
+  border-bottom: whitesmoke;
+  border-width: 20px; }
 
 .button {
   background-color: #e90e0e;
@@ -316,15 +284,7 @@ a:hover {
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 100%;
     }
-    
-    
-    .grillaMenu{
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: 100%;
-        font-size: 24px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+
     */
   .servicios {
     display: grid;
@@ -338,15 +298,6 @@ a:hover {
         grid-template-rows: repeat(4, auto);
     }
 
-    .grillaMenu{
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: 100%;
-        font-size: 22px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        
-    }
-
     */
   .servicios {
     display: grid;
@@ -357,15 +308,6 @@ a:hover {
   /*
     .mainGrid{
         grid-template-rows: repeat(4, auto);
-    }
-
-    .grillaMenu{
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: 100%;
-        font-size: 22px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        
     }
 
     */
